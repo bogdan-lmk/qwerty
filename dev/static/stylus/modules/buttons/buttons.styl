@@ -1,7 +1,12 @@
+.btn
+  text-align center
+  border-radius: 25px
+  &:hover
+    cursor: pointer
+
 .btn-version
   color: whiteColor
   background: transparent
-  border-radius: 25px
   border: 1px solid whiteColor
   padding: 15px 40px 15px 30px
   font-family: PTSansFont
@@ -16,5 +21,54 @@
   background: url('/static/img/general/scroll-arrow.png') no-repeat center
   background-size: cover
   margin-bottom: 30px
+
+.btn-get-rules
+  padding: 15px 60px
+  background: blue
+  color: whiteColor
+  font-family: PTSansFont
+  transition: 0.3s ease-in-out
   &:hover
-    cursor: pointer
+    transition: 0.3s ease-in-out
+    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
+
+.btn-subscribe
+  padding: 15px 60px
+  background: blue
+  color: whiteColor
+  font-family: PTSansFont
+  transition: 0.3s ease-in-out
+  margin-bottom: 45px
+  &:hover
+    transition: 0.3s ease-in-out
+    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
+
+
+.btn-apply
+  padding 20px 50px
+  font-family: PTSansFont
+  font-weight: 700
+  text-transform: uppercase
+  color: whiteColor
+  background: linear-gradient(to bottom, rgba(255,153,0,1) 0%,rgba(253,115,25,1) 100%)
+  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1)
+  transition: 0.4s ease-in-out
+  z-index: 11
+  position: relative
+  &:before
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    content: ''
+    opacity: 0
+    z-index: 0
+    transition: 0.4s ease-in-out
+    background: linear-gradient(to bottom, rgba(255,186,0,1) 0%,rgba(253,138,25,1) 100%);
+    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
+    border-radius: 25px
+  &:hover:before
+    opacity: 1
+    z-index: -1
+    transition:  0.4s ease-in-out
