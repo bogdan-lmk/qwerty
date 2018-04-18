@@ -1,4 +1,6 @@
 footer.footer
+  .footer-image
+    img.footer-img(src="/static/img/general/fd.png")
   .subscribe-block
     .logo.logo-footer
       a(href="/")
@@ -7,5 +9,101 @@ footer.footer
     .subscribe-text Подпишитесь на обновления
     form.form-subscribe-footer
       input(placeholder="Введите ваш e-mail").footer-input
-    .btn.btn-subscribe Подписаться
+    button.btn.btn-subscribe Подписаться
     p.copyright © 2010 - 2017 microfond26.ru. Все права защищены
+  .footer-content
+    .footer-link-block
+      h3.footer-link-block-name О Фонде
+      li.footer-list
+        a.footer-link(href="/") Учередительные документы
+      li.footer-list
+        a.footer-link(href="/") Нормативные документы
+      li.footer-list
+        a.footer-link(href="/") Прочие документы Фонда
+      li.footer-list
+        a.footer-link(href="/") Награды, сертификаты 
+      li.footer-list
+        a.footer-link(href="/") Отчеты
+      li.footer-list
+        a.footer-sublink(href="/") Финансовая отчетность
+      li.footer-list
+        a.footer-sublink(href="/") Статическая отчетность
+      li.footer-list
+        a.footer-sublink(href="/")  Стандарты МФО
+      li.footer-list
+        a.footer-sublink(href="/")  Реестр получателей поддержки
+      li.footer-list
+        a.footer-sublink(href="/") Презентации
+    .footer-link-block
+      h3.footer-link-block-name Виды займов
+      li.footer-list
+        a.footer-link(href="/") Беззалоговый
+      li.footer-list
+        a.footer-link(href="/") Микро-старт
+      li.footer-list
+        a.footer-link(href="/") Микро-оборот
+      li.footer-list
+        a.footer-link(href="/") Микро-старт
+      li.footer-list
+        a.footer-link(href="/") Микро-инвест
+      li.footer-list
+        a.footer-link(href="/") Сельхозкооперация  
+      li.footer-list
+        a.footer-link(href="/") Калькулятор
+      li.footer-list
+        a.footer-link(href="/") Предварительная заявка 
+    .footer-link-block
+      h3.footer-link-block-name Клиентам
+      li.footer-list
+        a.footer-link(href="/") Правила выдачи займов
+      li.footer-list
+        a.footer-link(href="/") ИП, ИП Глава К(Ф)Х
+      li.footer-list
+        a.footer-link(href="/") Правила выдачи займов
+    .footer-link-block
+      h3.footer-link-block-name Пресс-центр
+      li.footer-list
+        a.footer-link(href="/") Новости
+      li.footer-list
+        a.footer-link(href="/") Вопросы/Ответы
+      li.footer-list
+        a.footer-link(href="/") Партнеры
+      li.footer-list
+        a.footer-link(href="/") СМИ о нас 
+      li.footer-list
+        a.footer-link(href="/") Видео
+    .footer-link-block
+      h3.footer-link-block-name Контакты
+      li.footer-contact-list
+        a.footer-contact-link.footer-contact-link-time(href="/") Пн-Пт с 9:00 до 18:00, Сб и Вс - виходной
+      li.footer-contact-list
+        a.footer-contact-link.footer-contact-link-address(href="/") г. Ставрополь, уп. Пушкина 25 а, 3 этаж
+      li.footer-contact-list
+        a.footer-contact-link-number.footer-contact-link-number-first(href="/") +7 (8652) 35 - 41 - 65
+      li.footer-contact-list
+        a.footer-contact-link-number(href="/") +7 (8652) 35 - 41 - 65
+      li.footer-contact-list
+        a.footer-contact-link-number(href="/") +7 (8652) 35 - 41 - 65
+  .footer-content-bottom
+    .dev-links
+      a(href="/").politics Политика конфединциальности
+      .devops-info
+        span.devs Разработка сайта:  
+        a(href="/").dev-studio Beб-студия 
+    .socials-block
+      span.follow Соц. Сети:
+      .footer-social-link
+        a(href="/")
+          +icon('fb','footer-social-icon')
+      .footer-social-link
+        a(href="/")
+          +icon('vk','footer-social-icon')
+      .footer-social-link
+        a(href="/")
+          +icon('od','footer-social-icon')
+      .footer-social-link
+        a(href="/")
+          +icon('g-plus','footer-social-icon')
+      .footer-social-link
+        a(href="/")
+          +icon('insta','footer-social-icon')

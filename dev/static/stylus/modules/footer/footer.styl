@@ -5,18 +5,17 @@ footer
   background: dark-blue-two
   padding: 65px 0 65px 125px
   position: relative
-  &:after
-    content: ''
-    position: absolute
-    background: url('/static/img/general/fd.png') no-repeat center
-    width 480px
-    height: 560px
-    left: 0
-    top: 0
+
+.footer-image
+  position: absolute
+  z-index: 0
+  left: 0
+  bottom: 0
 
 .subscribe-block
   position: relative
   max-width: 380px
+  width: 25%
   z-index: 1
   display: flex
   flex-direction: column
@@ -35,8 +34,6 @@ footer
 .subscribe-text
   text-style-footer()
   margin-bottom: 25px
-
-
 
 .form-subscribe-footer
   display: flex
@@ -58,3 +55,165 @@ footer
 .copyright
   color: whiteColor
   font-weight: 700
+
+.footer-content
+  display: flex
+  flex-flow: wrap
+  width: 75%
+  align-self: flex-start
+  padding-left: 50px
+
+.footer-link-block
+  display: flex
+  flex-direction: column
+  width: 20%
+
+.footer-link-block-name
+  text-style-footer()
+  margin-bottom: 15px
+
+.footer-list
+  margin-bottom: 15px
+
+.footer-link
+  color: whiteColor
+  font-family: PTSansFont
+  transition: 0.3s ease-in-out
+  position: relative
+  font-size: rem(16px)
+  &:hover
+    transition: 0.3s ease-in-out
+    color: light-blue
+  &:after
+    content: ''
+    position: absolute
+    background: url('/static/img/general/sm-arrow.png') no-repeat center
+    top: 30%
+    right: -15px
+    width: 10px
+    height: 10px
+    opacity: 0
+    transition: 0.3s ease-in-out
+  &:hover:after
+    transition: 0.3s ease-in-out
+    opacity: 1
+.footer-sublink
+  color: whiteColor
+  font-family: PTSansFont
+  font-size: rem(14px)
+  transition: 0.3s ease-in-out
+  position: relative
+  &:before
+    content: '-'
+    margin-right: 5px
+  &:hover
+    transition: 0.3s ease-in-out
+    color: light-blue
+
+.footer-contact-link
+  color: whiteColor
+  font-weight: 700
+  position: relative
+  margin-left: 35px
+  display: flex
+  width: 75%
+.footer-contact-link-time
+  &:before
+    content: ''
+    background: url('/static/img/general/time-icon.png') no-repeat center
+    width: 19px
+    height: 19px
+    position: absolute
+    display: flex
+    left: -35px
+.footer-contact-link-address
+  margin: 30px 0 30px 35px
+  &:before
+    content: ''
+    background: url('/static/img/general/loc-icon.png') no-repeat center
+    width: 19px
+    height: 19px
+    position: absolute
+    display: flex
+    left: -35px
+
+.footer-contact-link-number
+  color: whiteColor
+  font-weight: 700
+  position: relative
+  margin-left: 35px
+  margin-bottom: 20px
+  display: flex
+
+
+.footer-contact-link-number-first
+  &:before
+    content: ''
+    background: url('/static/img/general/phone-icon-ft.png') no-repeat center
+    width: 19px
+    height: 19px
+    position: absolute
+    display: flex
+    left: -35px
+
+.footer-content-bottom
+  display: flex
+  width: 100%
+  padding-right: 100px
+  flex-flow: wrap
+  justify-content: space-between
+  margin-top: 40px
+
+.dev-links
+  z-index: 11
+  display: flex
+  width: 40%
+  justify-content: space-between
+
+.devops-info
+  font-family: PTSansFont
+
+.devs
+  color: white
+
+.dev-studio
+  color: light-blue
+  text-decoration: underline
+  cursor: pointer
+
+.follow
+  color: whiteColor
+  font-family: PTSansFont
+  margin-right: 20px
+.politics
+  display: flex
+  font-family: PTSansFont
+  color: light-blue
+  text-decoration: underline
+  &:hover
+    cursor: pointer
+.socials-block
+  display: flex
+  align-items: center
+
+.footer-social-link
+  margin-right: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  background: navy-blue-two
+  transition: 0.3s ease-in-out
+  &:last-child
+    margin-right: 0
+  &:hover
+    background: orange
+    transition: 0.3s ease-in-out
+    cursor: pointer
+
+.footer-social-icon
+  width: 18px
+  height: 18px
+  display: flex
