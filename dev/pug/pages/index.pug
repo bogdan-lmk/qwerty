@@ -8,14 +8,14 @@ block content
 	.block.block-main
 		include ../modules/header
 		include ../modules/main-nav
-		.block-main-content
+		.block-main-content.wow.slideInUp(data-wow-duration="1.5s" data-wow-delay="1s" )
 			.district
 				.district-image
 					img.district-img(src="./static/img/general/gerb.png")
 				h3.district-name МИНИСТЕРСТВО ЭКОНОМИЧЕСКОГО РАЗВИТИЯ СТАВРОПОЛЬСКОГО КРАЯ
 			h1.block-main-title Господдержка
 			h3.block-main-subtitle Микрозаймы для малого и среднего бизнеса на льготных условиях
-			.offer-content
+			.offer-content.wow.slideInUp(data-wow-duration="1.5s" data-wow-delay="1s")
 				.offer
 					.offer-top
 						span.offer-text до 
@@ -42,23 +42,23 @@ block content
 						span.offer-subtext-bottom  строк микрозайма
 			.btn-to-bottom
 		.block.block-counter
-			.counter-content-top
+			.counter-content-top.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 				span.counter-text-top Выдано:
 				.counter-top
-					span.counter-number-top.counter-number-top-single 3
-					span.counter-number-top 500
+					span.counter-number.counter-number-top.counter-number-top-single 3
+					span.counter-number.counter-number-top 500
 				span.counter-text-top кредитов
-			.counter-content-bottom
+			.counter-content-bottom.wow.slideInUp(data-wow-duration="1s"   data-offset="120")
 				span.counter-text-bottom на сумму
 				.counter-bottom
-					span.counter-number-bottom 3
-					span.counter-number-bottom 000
-					span.counter-number-bottom 000
-					span.counter-number-bottom 000
+					span.counter-number.counter-number-bottom 3
+					span.counter-number.counter-number-bottom 000
+					span.counter-number.counter-number-bottom 000
+					span.counter-number.counter-number-bottom 000
 				span.counter-text-bottom рублей
 	.block.block-purpose
 		h3.title.purpose-title НА КАКИЕ НУЖДЫ МОЖНО ПОЛУЧИТЬ микрозайм
-		.purpose-content
+		.purpose-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 			.purpose
 				.purpose-image
 					img(src="/static/img/general/users.png")
@@ -85,7 +85,7 @@ block content
 				p.purpose-desc Обеспечение заявки на участие в конкурсе (аукционе)
 	.block.block-types
 		h3.title.types-title Виды микрозайм
-		.types-content
+		.types-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 			.type
 				.type-name Беззалоговый
 				.type-info
@@ -144,7 +144,7 @@ block content
 						span.type-value 18 мес.
 	.block.block-steps
 			h3.title.steps-title Шаги получения микрозайма
-			.steps-content
+			.steps-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 				.step
 					.step-bg-number
 						img(src="/static/img/general/steps-number-one.png")
@@ -176,7 +176,7 @@ block content
 	.block.block-documents
 		h3.title.documents-title Документы и правила предоставления микрозайма
 		button.btn.btn-get-rules Правила предоставления микрозаймов
-		.documnets-content
+		.documnets-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 			.document
 				.documnet-img
 					img(src="/static/img/general/pdf.png")
@@ -192,14 +192,14 @@ block content
 		button.btn.btn-apply Подать предварительную заявку
 	.block.block-useful
 		h3.title.documents-title Полезные ссылки
-		.useful-content
+		.useful-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 			.useful-link-main
 				a(href="/")
 					img.useful-img(src="/static/img/general/ul-1.png")
 			.useful-link-main
 				a(href="/")
 					img.useful-img(src="/static/img/general/ul-2.png")
-		.useful-content.useful-content-secondary
+		.useful-content.useful-content-secondary.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
 			.useful-link-secondary
 				a(href="/")
 					img.useful-img(src="/static/img/general/ul-s-3.png")
@@ -211,4 +211,17 @@ block content
 					img.useful-img(src="/static/img/general/ul-s-1.png")
 		button.btn.btn-get-rules Показать все полезные ссылки
 	.block.block-map
-		#map
+		#map.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
+		.contacts.wow.slideInUp(data-wow-duration="1s"  data-wow-delay="0.2s" data-offset="100")
+			.contact-row
+				h3.contact-heading Контакты
+				span.contact-name.contact-name-adr Адрес
+				li.contact-list 
+					a.contact-link(href="/") г. Ставрополь, уп. Пушкина 25 а, 3 этаж
+			span.contact-name.contact-name-num Телефоны
+			li.contact-list
+				a.contact-link(href="/") +7 (8652) 35 - 41 - 65
+			li.contact-list
+				a.contact-link(href="/") +7 (8652) 35 - 41 - 65
+			li.contact-list
+				a.contact-link(href="/") +7 (8652) 35 - 41 - 65

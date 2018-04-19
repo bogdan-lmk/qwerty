@@ -110,6 +110,18 @@
   color: whiteColor
   font-size: rem(50px)
 
+.counter-number
+  position: relative
+  &:before
+    content: ''
+    absolute-center()
+    width: 99%
+    height: 2px
+    background: #727274
+    border-left: 2px solid dark-blue-two
+    border-right: 2px solid dark-blue-two
+
+
 .counter-number-top
   font-size: rem(60px)
   color: whiteColor
@@ -185,7 +197,7 @@
   color: black-two
   margin: 30px 0
   text-align: center
-
+  width: 100%
 .block-types
   padding: 65px 0 80px 0
   justify-content: center
@@ -337,7 +349,7 @@
   top: -40%
   left: 50%
   transform: translateX(-50%)
-  background: url('/static/img/general/steps-number.png') no-repeat center
+
 
 
 .step-name
@@ -443,7 +455,61 @@
 .useful-content-secondary
   margin-bottom: 35px
 
+.block-map
+  position: relative
+
 #map
   display: flex
   width: 100%
-  height: 50vh
+  height: 40vh
+
+.contacts
+  position: absolute
+  background: whiteColor
+  border-top: 10px solid blue
+  padding: 25px
+  top: 40px
+  right: 20%
+  z-index: 1
+
+.contact-row
+  margin-bottom: 30px
+
+.contact-heading
+  font-size: rem(40px)
+  color: blue
+  font-weight: 700
+  margin-bottom: 35px
+  text-transform: uppercase
+
+.contact-name
+  font-size: rem(20px)
+  color: dark-blue
+  font-weight: 700
+  margin-bottom: 20px
+  text-transform: uppercase
+  position: relative
+  padding-left: 30px
+.contact-name-adr
+  &:before
+    left: 0
+    position: absolute
+    content: ''
+    width: 20px
+    height: 20px
+    display: flex
+    background: url("/static/img/general/loc-icon.png") no-repeat center
+
+.contact-name-num
+  &:before
+    left: 0
+    position: absolute
+    content: ''
+    width: 20px
+    height: 20px
+    display: flex
+    background: url("/static/img/general/phone-icon-ft.png") no-repeat center
+
+.contact-link
+  font-family: PTSansFont
+  margin-bottom: 15px

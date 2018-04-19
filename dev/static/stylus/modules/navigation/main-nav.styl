@@ -1,33 +1,86 @@
 .main-nav
   display flex
-  padding 15px 0
   background dark-blue
   align-items: center
-  justify-content: space-around
+  padding: 0px 45px
   width: 100%
   position sticky
-  top 0
+  justify-content: space-between
   z-index 11
+  position relative
 
+.search-block
+  position absolute
+  display: none
+  width: 100%
+  background: blue
+  bottom: -100px
+  left: 0
+  padding-top: 15px
+  padding-bottom: 15px
+  padding-right: 45px
+  justify-content: flex-end
+.active
+  display: flex!important
 
-.navigation
+.search-content
+  display: flex
   width: 80%
+  align-items: center
+  justify-content: space-between
+
+
+.search-row
+  display: flex
+  width: 60%
+  justify-content: space-between
+  align-items: center
+
+.search-row-buttons
+  display: flex
+  width: 38%
+  justify-content: space-between
+  align-items: center
+.search-name
+  text-transform: uppercase
+  color: white
+
+
+
+.search-by-site
+  font-family: PTSansFont
+  font-size: rem(16px)
+  width: 80%
+  color: blue-two
+  padding: 12px 30px
+  border-radius: 25px
+  background: dark-blue-three
+  border: none
+  &::-webkit-input-placeholder
+    color: blue-two
+.navigation
+  width: 63%
   display: flex
   align-items: center
-  justify-content: space-evenly
+  justify-content: space-between
 
 
 .stickyNav
   position fixed
   top 0px
-  transition 1s ease
   z-index 99
 
-
+.nav-logo
+  opacity 0
+  transition 0.3s ease
+.visible
+  opacity 1
+  transition 0.3s ease
 
 .nav-list
   position: relative
   cursor: pointer
+  padding 15px 0
   &:after
     opacity: 0
     content: ''
@@ -35,20 +88,13 @@
     height: 2px
     background: orange
     position: absolute
-    bottom: -15px
+    bottom: 0px
     left: 0
     transition: 1s ease
   &:hover:after
     opacity: 1
     transition: 1s ease
+
 .nav-link
   color: whiteColor
   font-size: 18px
-
-.search-btn
-  align-self: flex-end
-  width: 22px
-  height: 22px
-  background: url('/static/img/general/search-icon.png') no-repeat center
-  &:hover
-    cursor: pointer

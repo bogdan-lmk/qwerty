@@ -1,4 +1,6 @@
-.main-nav
+.main-nav.wow.slideInDown(data-wow-duration="1.7s")
+  .nav-logo
+    img.nav-img(src="/static/img/general/nav-logo.png")
   nav.navigation
     li.nav-list
       a.nav-link О фонде
@@ -11,3 +13,13 @@
     li.nav-list
       a.nav-link Контакты
   a.search-btn 
+  .search-block
+    .search-content
+      .search-row
+        span.search-name Поиск по сайту
+        form.search-form 
+        input.search-by-site(placeholder="Введите слово для поиска")
+      .search-row-buttons
+        button.btn.btn-get-search Поиск по сайту
+        .btn.btn-close
+        
