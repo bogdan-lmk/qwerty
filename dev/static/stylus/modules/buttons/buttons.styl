@@ -1,119 +1,111 @@
 .btn
-  text-align center
-  border-radius: 25px
-  border: none
-  &:hover
-    cursor: pointer
-
-.search-btn
-  align-self: flex-end
-  width: 22px
-  height: 22px
-  background: url('/static/img/general/search-icon.png') no-repeat center
-  transition: 0.3s ease-in-out
-  padding 25px
-  &:hover
-    transition: 0.3s ease-in-out
-    cursor: pointer
-    background: url('/static/img/general/search-icon-hv.png') no-repeat center
-    
-.btn-close
-  align-self: flex-end
-  width: 22px
-  height: 22px
-  background: url('/static/img/general/close-icon.png') no-repeat center
-  padding 25px
-  &:hover
-    transition: 0.3s ease-in-out
-    cursor: pointer
-    background: url('/static/img/general/close-icon-hv.png') no-repeat center
-
-.btn-get-search
-  font-family: PTSansFont
-  font-size: rem(16px)
-  color: whiteColor
-  background: dark-blue
-  padding: 12px 60px
-  transition: 0.3s ease-in-out
-  height: 100%
-  &:hover
-    transition: 0.3s ease-in-out
-    background:  #035896
-    box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1)
-  &:focus
-    background: #033c67
-.btn-version
-  color: whiteColor
+  position: relative;
   background: transparent
-  border: 1px solid whiteColor
-  padding: 15px 40px 15px 30px
-  font-family: PTSansFont
-  font-size: rem(14px)
-  margin-left: 30px
-  text-align center
-  transition: 0.3s ease-in-out
+  width: 230px
+  max-width: 230px
+  padding: 15px 0
+  transform: translate3d(0,0,0);
+  transition-animation()
+  Link-Text-Style()
   &:hover
-    border: 1px solid blue-two
-    color: blue-two
-    transition: 0.3s ease-in-out
+    transition-animation()
+    cursor: pointer;
+    transform: translate3d(-3px,-3px,0);
 
-.btn-to-bottom
-  width: 36px
-  height: 70px
-  background: url('/static/img/general/scroll-arrow.png') no-repeat center
-  background-size: cover
-  margin-bottom: 30px
-  cursor: pointer
-
-.btn-get-rules
-  padding: 15px 60px
-  background: blue
-  color: whiteColor
-  font-family: PTSansFont
-  transition: 0.3s ease-in-out
-  &:hover
-    transition: 0.3s ease-in-out
-    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
-  &:focus
-    background: dark-blue
-
-.btn-subscribe
-  padding: 15px 60px
-  background: blue
-  color: whiteColor
-  font-family: PTSansFont
-  transition: 0.3s ease-in-out
-  margin-bottom: 45px
-  &:hover
-    transition: 0.3s ease-in-out
-    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
-
-
-.btn-apply
-  padding 20px 50px
-  font-family: PTSansFont
-  font-weight: 700
-  text-transform: uppercase
-  color: whiteColor
-  background: linear-gradient(to bottom, rgba(255,153,0,1) 0%,rgba(253,115,25,1) 100%)
-  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1)
-  transition: 0.4s ease-in-out
-  z-index: 11
-  position: relative
+.btn-wrap
+  position: relative;
   &:before
-    position: absolute
-    left: 0
-    top: 0
+    content: ''
+    position: absolute;
     width: 100%
     height: 100%
-    content: ''
-    opacity: 0
-    z-index: 0
-    transition: 0.4s ease-in-out
-    background: linear-gradient(to bottom, rgba(255,186,0,1) 0%,rgba(253,138,25,1) 100%);
-    box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.1)
-    border-radius: 25px
-  &:hover:before
-    opacity: 1
-    z-index: -1
-    transition:  0.4s ease-in-out
+    max-width: 230px
+    left: 7px
+    bottom: -7px
+    display: flex;
+    background: white
+
+.btn-wrap--column
+  margin-bottom: 15px
+
+.btn-wrap--row
+  margin-right: 30px
+
+.btn-wrap--blue
+  &:before
+    border: 2px solid skyblue
+
+.btn-wrap--pink
+  &:before
+    border: 2px solid pink
+
+.btn-wrap--yellow
+  &:before
+    border: 2px solid yellow
+
+.btn--blue
+  border: 2px solid skyblue
+  background: white
+  z-index: 99
+  &:hover
+    background: skyblue
+    color: white
+    transition-animation()
+  &:focus
+    background: blue
+    color: white
+    border: 2px solid blue
+
+
+
+
+
+.btn--pink
+  border: 2px solid pink
+  background: white
+  z-index: 99
+  &:hover
+    background: pink
+    color: white
+    transition-animation()
+  &:focus
+    background: pink
+    color: white
+    border: 2px solid pink
+
+.btn--yellow
+  border: 2px solid yellow
+  background: white
+  z-index: 99
+  &:hover
+    background: yellow
+    color: white
+    transition-animation()
+  &:focus
+    background: yellow
+    color: white
+    border: 2px solid yellow
+
+.btn-add-to-chart
+    width: 100%;
+    border: none;
+    color: white
+    text-transform: uppercase;
+    background: skyblue
+    font-size: rem(14px)
+    padding: 20px 0
+    cursor: pointer;
+    text-align: center;
+
+.btn-wrap--footer
+  &:before
+    max-width: 310px
+
+.btn-footer
+  max-width: 310px
+  width: 310px
+
+.footer-content-bottom-wrap
+  width: 100%
+  display: flex;
+  justify-content: space-between;

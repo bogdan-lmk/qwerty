@@ -1,219 +1,201 @@
 footer
-  flex 0 0 auto
-  display flex
-  flex-flow wrap
-  background: dark-blue-two
-  padding: 65px 0 65px 125px
-  position: relative
-
-.footer-image
-  position: absolute
-  z-index: 0
-  left: 0
-  bottom: 0
-
-.subscribe-block
-  position: relative
-  max-width: 380px
-  width: 25%
-  z-index: 1
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-
-.logo-footer
-  position: absolute
-  left: -20%
-  top: 0
-
-.logo-text-footer
-  width: 100%
-  margin-left: 0
-  margin-bottom: 40px
-
-.subscribe-text
-  text-style-footer()
-  margin-bottom: 25px
-
-.form-subscribe-footer
-  display: flex
-  margin-bottom: 15px
-  width: 100%
-
-.footer-input
-  font-family: PTSansFont
-  font-size: rem(16px)
-  width: 100%
-  color: blue-two
-  padding: 25px 15px
-  border-radius: 25px
-  background: navy-blue
-  border: none
-  &::-webkit-input-placeholder
-    color: blue-two
-
-.copyright
-  color: whiteColor
-  font-weight: 700
-
+  display: flex;
+  justify-content: center;
+  background: skyblue-three
+  align-items: center;
+  flex-direction: column;
 .footer-content
-  display: flex
-  flex-flow: wrap
-  width: 75%
-  align-self: flex-start
-  padding-left: 50px
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 50px
+  padding-bottom: 65px
 
-.footer-link-block
-  display: flex
+.nav-footer
   flex-direction: column
-  width: 20%
-
-.footer-link-block-name
-  text-style-footer()
+  justify-content: initial;
+.nav-li-footer
   margin-bottom: 15px
-
-.footer-list
-  margin-bottom: 15px
-
-.footer-link
-  color: whiteColor
-  font-family: PTSansFont
-  transition: 0.3s ease-in-out
-  position: relative
-  font-size: rem(16px)
-  &:hover
-    transition: 0.3s ease-in-out
-    color: light-blue
-  &:after
+  &:last-child
+    margin-bottom: 0
+.nav-link-footer
+  font-size: 0.777777777777778rem;
+  color: #2f2f32;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  transition-animation()
+  &:before, &:after
+    display: inline-block;
     content: ''
-    position: absolute
-    background: url('/static/img/general/sm-arrow.png') no-repeat center
-    top: 30%
-    right: -15px
-    width: 10px
-    height: 10px
-    opacity: 0
-    transition: 0.3s ease-in-out
-  &:hover:after
-    transition: 0.3s ease-in-out
+    position: absolute;
+    top: 50%
+    transform translate(0%,-50%)
+    right: -10px
     opacity: 1
-.footer-sublink
-  color: whiteColor
-  font-family: PTSansFont
-  font-size: rem(14px)
-  transition: 0.3s ease-in-out
-  position: relative
-  &:before
-    content: '-'
-    margin-right: 5px
+    width: 4px
+    height: 4px
+    border-radius: 50px
+    position: absolute;
+    background: main-black
+    transition-animation()
+    opacity: 0
   &:hover
-    transition: 0.3s ease-in-out
-    color: light-blue
+    text-decoration: underline;
+    transition-animation()
+  &:hover:before,
+  &:hover:after
+    opacity: 1
+    transition-animation()
 
-.footer-contact-link
-  color: whiteColor
-  font-weight: 700
-  position: relative
-  margin-left: 35px
-  display: flex
-  width: 75%
-.footer-contact-link-time
+.nav-link-footer
   &:before
-    content: ''
-    background: url('/static/img/general/time-icon.png') no-repeat center
-    width: 19px
-    height: 19px
-    position: absolute
-    display: flex
-    left: -35px
-.footer-contact-link-address
-  margin: 30px 0 30px 35px
-  &:before
-    content: ''
-    background: url('/static/img/general/loc-icon.png') no-repeat center
-    width: 19px
-    height: 19px
-    position: absolute
-    display: flex
-    left: -35px
-
-.footer-contact-link-number
-  color: whiteColor
-  font-weight: 700
-  position: relative
-  margin-left: 35px
-  margin-bottom: 20px
-  display: flex
+    left: -10px
 
 
-.footer-contact-link-number-first
-  &:before
-    content: ''
-    background: url('/static/img/general/phone-icon-ft.png') no-repeat center
-    width: 19px
-    height: 19px
-    position: absolute
-    display: flex
-    left: -35px
+.socials
+  margin-top: 35px
 
-.footer-content-bottom
-  display: flex
-  width: 100%
-  padding-right: 100px
-  flex-flow: wrap
-  justify-content: space-between
-  margin-top: 40px
+.social-wrap
+  display: flex;
+  margin-top: 15px
 
-.dev-links
-  z-index: 11
-  display: flex
-  width: 40%
-  justify-content: space-between
+.socials-heading
+  font-size: 14px
+  color: #5e717b
+  margin-top: 35px
 
-.devops-info
-  font-family: PTSansFont
-
-.devs
-  color: white
-
-.dev-studio
-  color: light-blue
-  text-decoration: underline
-  cursor: pointer
-
-.follow
-  color: whiteColor
-  font-family: PTSansFont
+.social-link
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px
+  height: 40px
+  border-radius: 50px
+  border: 2px solid main-black
+  transition-animation()
+  background: inherit
   margin-right: 20px
-.politics
-  display: flex
-  font-family: PTSansFont
-  color: light-blue
-  text-decoration: underline
-  &:hover
-    cursor: pointer
-.socials-block
-  display: flex
-  align-items: center
-
-.footer-social-link
-  margin-right: 10px
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 30px
-  height: 30px
-  border-radius: 50%
-  background: navy-blue-two
-  transition: 0.3s ease-in-out
   &:last-child
     margin-right: 0
   &:hover
-    background: orange
-    transition: 0.3s ease-in-out
-    cursor: pointer
+    border 2px solid pink
+    background: white
+    transition-animation()
 
-.footer-social-icon
-  width: 18px
-  height: 18px
-  display: flex
+.social-link-icon
+  width: 14px
+  height: 14px
+
+.newsletter-content
+  display: flex;
+  flex-direction: column;
+
+.newsletter-heading
+  font-size: 14px
+  color: #5e717b
+  margin-bottom: 20px
+
+.newsletter-input
+  max-width: 310px
+  width: 310px
+  padding: 15px 20px
+  background: inherit
+  border: 2px solid #7c9aa7
+  transition-animation()
+  margin-bottom: 15px
+  &:hover
+    cursor: pointer;
+    border: 2px solid main-black
+    transition-animation()
+  &:focus
+    border: 2px solid main-black
+    transition-animation()
+  &hover::-webkit-input-placeholder
+    color: main-black
+
+.footer-content-bottom
+  width: 100%
+  display: flex;
+  justify-content: center;
+  padding: 15px 0
+  border-top: 1px solid #9cc4d5
+
+
+.copyright
+  font-size: 14px
+  color: #828284
+
+.language-select
+  margin-right: 35px;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+
+.custom-option-current
+  display: flex;
+  align-items: center;
+
+.custom-option-select
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 5px
+  cursor: pointer;
+
+.arrow-lang
+  width: 10px
+  height: 10px
+  margin-left: 5px
+  background: url('/static/img/general/arrow-top.png') no-repeat center
+  transition-animation()
+
+
+.language
+  color: #828284
+  font-size: 14px
+
+.language-picked
+  color: #2a2e32
+  font-size: 14px
+
+.closed
+  display: none
+
+
+.open
+  animation: fadeEffect 0.5s
+
+.flag-usd
+  display: flex;
+  width: 20px
+  height: 10px
+  content: ''
+  background: url('/static/img/general/usa.png') no-repeat center
+  margin-right: 5px
+
+.custom-select
+  padding-top: 10px
+  position: absolute;
+  width: 115px
+  height: 105px
+  border: 2px solid pink
+  background: white
+  top: -105px
+  left: -40%
+  overflow-y: scroll;
+  ::-webkit-scrollbar
+    display: none;
+
+.custom-select::-webkit-scrollbar {
+  display: none;
+}
+
+.flag-eng
+  display: flex;
+  width: 20px
+  height: 10px
+  content: ''
+  background: url('/static/img/general/aus.png') no-repeat center
+  margin-right: 5px

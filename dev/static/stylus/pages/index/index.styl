@@ -1,515 +1,550 @@
-.block
-  display: flex
-  flex-direction: column
-  position: relative
-
-.block-main
-  background: url('/static/img/content/bg-1.png') no-repeat center
-  background-size: cover
-  width: 100%
-  max-height: 100%
-  background-attachment: fixed
-
-
-.block-main-content
-  display flex
-  align-items: center
-  width: 100%
-  justify-content: center
-  flex-direction: column
-  padding-top: 85px
-
-.district
-  display: flex
-  align-items: center
-  margin-top: 40px
-  margin-bottom: 120px
-
-.district-name
-  font-weight: 700
-  font-size: 18px
-  color: whiteColor
-  margin-left: 20px
-  text-transform: uppercase
-
-.block-main-title
-  color: whiteColor
-  text-transform: uppercase
-  font-size: 100px
-  font-weight: 700
-  letter-spacing: 7px
-
-
-.block-main-subtitle
-  font-family: PTSansFont
-  color: whiteColor
-  text-align: center
-  font-size: rem(25px)
-  width: 30%
-  margin-bottom: 80px
-
-.offer-content
-  display: flex
-  width: 100%
-  justify-content: center
-  margin-bottom: 30px
-.offer
-  margin-right: 200px
-  &:last-child
-    margin-right: 0
-
-.offer-text
-  color: whiteColor
-
-
-.offer-large
-  color: orange
-  font-size: rem(90px)
-  margin: 0 5px
-  letter-spacing: 5px
-
-.offer-bottom
-  display: flex
-  flex-direction: column
-  position: relative
-  &::before
-    content: ''
-    width: 100%
-    height: 2px
-    position: absolute
-    left: 0
-    top: -10px
-    background-color: whiteColor
-
-.offer-text-bottom
-  font-size: rem(28px)
-  color: whiteColor
-  font-family: PTSansFont
-  font-weight: 700
-
-.offer-subtext-bottom
-  color: whiteColor
-  font-family: PTSansFont
-
-.block-counter
-  width: 100%
-  justify-content: center
-  align-items: center
-  background: dark-blue-two
-  padding: 40px 0
-.counter-content-top
-  display: flex
-  align-items: baseline
-  margin-bottom: 20px
-
-.counter-top
-  margin: 0 40px
-  display: flex
-
-.counter-text-top
-  color: whiteColor
-  font-size: rem(50px)
-
-.counter-number
-  position: relative
+.main-block
+  height: 65vh
+  justify-content: center;
   &:before
     content: ''
-    absolute-center()
-    width: 99%
-    height: 2px
-    background: #727274
-    border-left: 2px solid dark-blue-two
-    border-right: 2px solid dark-blue-two
+    position: absolute;
+    background: url('/static/img/general/flowers-decor.png') no-repeat
+    width: 100%
+    height: 100%;
+    left: 0
+    bottom: 0
+    z-index: 0
 
-
-.counter-number-top
-  font-size: rem(60px)
-  color: whiteColor
-  background: dark-grey
-  padding: 20px 15px
-  font-family: HelveticaNeue
-  font-weight: 700
-  letter-spacing: 10px
-
-.counter-number-top-single
-  margin-right: 12px
-
-.counter-content-bottom
-  display: flex
-  align-items: baseline
-
-.counter-bottom
-  margin: 0 40px
-  display: flex
-
-.counter-text-bottom
-  color: whiteColor
-  font-size: rem(30px)
-
-.counter-number-bottom
-  font-size: rem(98px)
-  color: orange
-  background: dark-grey
-  padding: 10px 15px
-  font-family: HelveticaNeue
-  font-weight: 700
-  letter-spacing: 10px
-  margin-right: 10px
-  &:last-child
-    margin-right: 0
-.counter-number-top-single
-  margin-right: 12px
-
-.block-purpose
-  justify-content: center
-  align-items: center
-
-.title
-  text-transform: uppercase
-  color: dark-blue
-  font-size: 40px
-  font-weight: 700
-  align-self: center
-
-.purpose-title
-  display: flex
-  align-self: center
-  margin: 60px 0
-
-
-.purpose-content
-  display: flex
-  width: 50%
-  flex-flow: wrap
-  justify-content: space-around
-  align-items: baseline
-
-.purpose
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  width: 30%
-  margin-bottom: 80px
-
-.purpose-desc
-  font-size: rem(20px)
-  color: black-two
-  margin: 30px 0
-  text-align: center
+.main-block-content
+  display: flex;
   width: 100%
-.block-types
-  padding: 65px 0 80px 0
-  justify-content: center
-  align-items: center
-  background: skyblue  url('/static/img/general/decor.png') no-repeat center
-  background-attachment: fixed
-  position: relative
+  justify-content: space-around;
+  height: 100%
+  z-index: 99
 
-.types-title
-  font-size: rem(35px)
-
-.types-content
-  display: flex
-  width: 60%
-  flex-flow: wrap
-  align-items: baseline
-  margin-top: 60px
-  justify-content: center
+.main-glass-slider
+  width: 45%
+  height: 360px
+  display: flex;
 
 
-.type
-  width: 20%
-  display: flex
-  flex-direction: column
-  align-items: center
-  margin-bottom: 30px
-  margin-right: 170px
-  position: relative
-  z-index: 11
-  box-shadow: 0px 17px 40px 1px rgba(0,0,0,0.1)
+.content-wrap
+  display: flex;
+  flex-direction: column;
+  width: 45%
+
+
+.main-buttons-wrap
+  display: flex;
+  justify-content: space-between;
+  width: 93%
+
+
+.buttons-wrap.row
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  &:hover .button-desc
+    color: #57575a
+    transition-animation()
+
+.buttons-wrap.column
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:hover .button-desc
+    color: #57575a
+    transition-animation()
+
+
+
+.main-heading
+  Main-Title-Style()
+  text-shadow: 4px 4px 4px skyblue-two;
+  color: #202023
+  margin-bottom: 65px
+
+.button-desc
+  Description-Text-Style()
+  transition-animation()
+
+.item-tag
+  Heading-Text-Style()
+  text-shadow: 4px 4px 4px #9adfff;
+
+.items-block-content
+  display: flex;
+  flex-direction: column;
+  width: 100%
+  margin-top: 100px
+  margin-bottom: 115px
+
+.item-info-wrap
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px
+  align-items:baseline;
+
+.item-type-name
+  display: flex;
+  width: 23%
+  align-items: center;
+  justify-content: center;
+
+.item-row
+  width: 75%
+  display: flex;
+  justify-content: space-between;
+
+.item-tabs
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+
+.item-tabs-name
+  font-size: rem(20px)
+  text-transform capitalize
+  text-decoration: underline
+  transition-animation()
+  &:hover
+    color: #35bbe1
+    cursor: pointer;
+    transition-animation()
+
+.active-tab
+  color: #35bbe1
+
+
+
+.item-total
+  display: flex;
+  justify-content: space-between;
+
+.total-text
+  font-style: italic;
+  color: #828284
+  margin-right: 5px
   &:last-child
     margin-right: 0
+
+.item-photo
+  max-width: 23%
+  position: relative;
+  z-index: 99
+  padding-bottom: 10px
+  height: 100%
+
+.item-tab-content
+  display: none
+  justify-content: space-between;
+  animation: fadeEffect 1s
+
+.item-tab-content.active
+  display: flex;
+
+.item-photo-decoration
+  position: absolute;
+  left: 10px
+  top: 10px
+  background: url('/static/img/general/item-photo-decor.png') no-repeat
+  width: 100%
+  height: 100%
+  z-index: -1
+
+.item-photo-decoration-second
+  background: url('/static/img/general/item-photo-decor-2.png') no-repeat
+
+.items-wrap
+  display: flex;
+  width: 75%
+  flex-flow: wrap;
+
+
+.item
+  position: relative;
+  width: 310px
+  height: 50%
+  max-width: 310px
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px
+  border: 1px solid #e3e3e3
+  border-collapse: collapse
+  transition-animation()
+  &:hover
+    border: 1px solid skyblue
+    transition-animation()
+    cursor: pointer;
+    border-collapse: collapse
+    border-bottom: 1px solid transparent
+  &:hover .item-action
+    display: flex;
+    animation: fadeEffect 0.5s
+    z-index: 99
+  &:hover .item-link-view
+    opacity: 1
+    transition-animation()
+
+.item-explore
+  border: 1px solid #e3e3e3
+  align-items: center;
+  justify-content: center;
+  position: relative
+  &:before
+    height: 100%
+    width: 100%
+    content: ''
+    position: absolute;
+    left 0
+    bottom: 0
+    background-image: url('/static/img/general/explore-item-decor.png')
+    background-repeat: no-repeat;
+  &:hover
+    border: 1px solid skyblue
+    transition-animation()
+    background: #81d7ff
+  &:hover .explore-collection-link
+    color: white
+    transition-animation()
+  &:hover:before
+    background-image: url('/static/img/general/explore-item-decor-blue.png')
+    background-repeat: no-repeat;
+    transition-animation()
+
+@keyframes fadeEffect{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+.item-top
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0
+  align-items: baseline;
+  font-size: 12px
+  text-transform: uppercase;
+
+.item-image
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+.item-name
+  color: #79797b
+
+.item-link-view
+  color: skyblue
+  text-decoration: underline;
+  opacity: 0
+  transition-delay()
+
+.item-price
+  margin-bottom: 35px
+  display: flex
+  justify-content: space-between;
+
+
+.old-price
+  color: #9d9d9e
+  text-decoration: line-through;
+  display: none;
+
+.sales
+  flex-flow: row-reverse;
+  .old-price
+    display: block;
+
+
+.item-action
+  display: flex;
+  flex-flow: wrap;
+  position: absolute;
+  left: -1px;
+  top: 100%;
+  border: 1px solid skyblue;
+  border-top: 1px solid transparent
+  width: 100%;
+  box-sizing:content-box;
+  border-right: 1px solid skyblue
+  display: none;
+  background: white
+
+.select-item-color
+  display: flex;
+  align-items:center
+  flex-shrink: 1
+  width: auto;
+  padding: 10px 0
+  margin 0 20px
+
+.color-choice
+  display: none;
+
+.color-pick
+  border-radius: 50px
+  display: flex
+  margin-right: 5px
+  width: 28px
+  height: 28px
+  background: white
+  border: 1px solid #edece9
+  position: relative;
+  cursor: pointer;
   &:after
     content: ''
-    background-color:  whiteColor
-    padding-bottom: 50%
-    width: 57.7%
-    z-index: -1
-    position: absolute
-    bottom: -52%
-    left: 0
-    transform-origin: 0 0
-    transform: rotate(-30deg) skewX(30deg)
-    box-shadow: 0px 17px 40px 1px rgba(0,0,0,0.1)
+    position: absolute;
+    border-radius: 50px
+    display: flex
+    width: 15px
+    height: 15px
+    background: black
+    top 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    transition-animation()
+    transition-delay: 0.1s
 
-.type-name
-  color: whiteColor
-  font-size: rem(20px)
-  font-weight: 700
-  text-transform uppercase
-  background: blue
+.color-choice
+  &:checked + .color-pick
+    border: 1px solid skyblue
+    background: skyblue
+    transition-animation()
+    transition-delay: 0.1s
+
+.pink
+  &:after
+    background: pink
+
+.black
+  &:after
+    background: black
+
+.wrap-ad-to-chart
+  display: flex;
+  flex-grow: 1
+  width: 50%
+  min-width: 50%
+
+.explore-collection-link
+  Simple-Text-Style()
+  color: #26b5de
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition-animation()
+  z-index: 99
+
+.benefits-block
+  height: 65vh
+  justify-content: center;
+  position: relative;
+
+.story
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+
+.decortion
   width: 100%
-  padding: 25px 0
-  text-align: center
+  height: 100%
+  z-index: 199
+  position: absolute;
 
-.type-info
-  position: relative
-  display: flex
-  width: 100%
-  flex-direction: column
-  align-items: center
-  background: whiteColor
-  padding: 0 20px
+#first-decoration
+  background: url('/static/img/general/Illustration-1.png')  no-repeat fixed
+  background-position: 77.3%
 
-.type-icon
-  margin: 25px 0
-  width: 50px
-  height: 50px
-  display: flex
-  align-items: center
-  justify-content: center
-  border-radius: 50%
-  box-shadow: 0px 2px 3px 3px #eff0f0
+#second-decoration
+  background: url('/static/img/general/Illustration-2.png')  no-repeat fixed
+  background-position: 77.4%
 
-.type-info-text
-  font-family: PTSansFont
-  font-size: rem(16px)
-  color: black-two
-  display: flex
-  align-self: flex-start
+#third-decoration
+  background: url('/static/img/general/Illustration-3.png')  no-repeat fixed
+  background-position: 80.1%
 
-.type-value
-  font-weight: 900
-  margin-left: 10px
-  display: flex
-  align-self: flex-end
 
-.block-steps
-  background: url('/static/img/general/steps-bg.png') no-repeat center
-  background-size: cover
-  background-attachment: fixed
-  padding: 70px 0 125px 0
-  position: relative
-  z-index: 11
+
+.benefits-block--skyblue
+  background: skyblue-two
   &:before
     content: ''
-    position: absolute
+    position: absolute;
     width: 100%
     height: 100%
-    background: linear-gradient(to bottom, rgba(0,27,47,1) 0%,rgba(0,27,47,0.01) 100%)
-    top: 0
-    left: 0
     z-index: 0
-.steps-title
-  margin-bottom: 75px
-  color: whiteColor
-  z-index: 11
+    background: url('/static/img/general/decor-benefit-1.png') no-repeat
 
-.steps-content
-  display: flex
-  flex-flow: wrap
-  width: 60%
-  align-self: center
-  margin-top: 60px
-
-.step
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  width: 25%
-  position: relative
-
-
-.step-image
-  margin-bottom: 45px
-  position: relative
-  &:after
+.benefits-block--turquoise
+  background: seacolor
+  &:before
     content: ''
-    position: absolute
-    background:  url('/static/img/general/steps-arrow.png') no-repeat center
-    width: 80px
-    height: 31px
-    right: -150%
-    top: 50%
+    position: absolute;
+    height: 362px
+    width: 272px
+    right: 0
+    bottom: 78%
+    z-index: 0
+    background: url('/static/img/general/decor-benefit-2.png') no-repeat
 
-.step-image-second
-  &:after
-    transform: rotateX(180deg)
-
-.step-image-last
-  &:after
-    display: none
-
-
-.step-bg-number
-  content: ''
-  position: absolute
-  top: -40%
-  left: 50%
-  transform: translateX(-50%)
-
-
-
-.step-name
-  font-size: rem(24px)
-  color: light-blue
-  text-transform: uppercase
-  font-weight: 700
-  margin-bottom: 20px
-
-.step-desc
-  font-family: PTSansFont
-  color: whiteColor
-  width: 85%
-  text-align: center
-.block-documents
-  padding: 70px 0 60px 0
-  justify-content: center
-  align-items: center
-  background: skyblue
-
-.documents-title
-  font-size: rem(35px)
-  margin-bottom: 40px
-
-
-.documnets-content
-  display: flex
-  flex-flow: wrap
-  width: 60%
-  justify-content: space-around
-  margin: 35px 0
-
-
-.document
-  display: flex
-  flex-direction: column
-  width: 30%
-  align-items: center
-  justify-content: center
-  background: white
-  padding: 25px 0
-  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1)
-  &:hover
-    cursor: pointer
-  &:hover .document-name
-    color: blue
-    transition: 0.3s ease-in-out
-  &:hover .document-name
-    &:after
-      opacity: 1
-      transition: 0.3s ease-in-out
-.document-name
-  font-size: rem(24px)
-  font-weight: 700
-  color: dark-blue
-  margin-top: 35px
-  position: relative
-  transition: 0.3s ease-in-out
-  &:after
-    position: absolute
-    left: 0
-    bottom: 0px
+.benefits-block--creamy
+  background #ffe7c9
+  &:before
     content: ''
+    position: absolute;
     width: 100%
-    height: 2px
-    background: blue
-    opacity: 0
-    transition: 0.3s ease-in-out
-.block-useful
-  justify-content: center
-  align-items: center
-  padding: 70px 0
+    height: 100%
+    z-index: 0
+    background: url('/static/img/general/decor-benefit-3.png')
 
-.useful-content
-  display: flex
-  flex-flow: wrap
-  width: 65%
-  justify-content: space-between
+.benefit-section
+  display: flex;
+  justify-content: space-between;
+  z-index: 99
 
-.useful-link-main
-  max-width 600px
-  width: 50%
-  display: flex
-  margin-bottom: 20px
-  &:last-child
-    margin-right: 0
 
-.useful-img
-  max-width: 100%
-  height: auto
-  border: 2px solid transparent
-  transition: 0.3s ease-in-out
-  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1)
-  &:hover
-    border: 2px solid orange
-    transition: 0.3s ease-in-out
+.benefit-info
+  display: flex;
+  flex-direction: column;
+  max-width: 40%
 
-.useful-link-secondary
-  display: flex
-  max-width: 390px
-  width: 30%
+.benefit-image
+  max-width 50%
 
-.useful-content-secondary
-  margin-bottom: 35px
+.benefit-heading
+  Heading-Text-Style()
 
-.block-map
+
+.benefit-heading--pink
+  text-shadow: 4px 4px 4px pink;
+
+.benefit-heading--yellow
+  text-shadow: 4px 4px 4px yellow;
+
+.benefit-heading--blue
+  text-shadow: 4px 4px 4px skyblue;
+
+.benefit-text
+  margin-top: 60px
+  margin-bottom: 70px
+  line-height: rem(30px)
+  color: #3b484f
+
+.constructor-block
+  margin-top: 65px
+  margin-bottom: 160px
+
+.constructor-heading
+  Heading-Text-Style()
+  text-shadow: 4px 4px 4px skyblue-two;
+
+
+.compare-glass-slider
+  display: flex;
+  width: 40%
+
+.compare-slider-container
   position: relative
-
-#map
-  display: flex
+  height: 250px
   width: 100%
-  height: 40vh
 
-.contacts
-  position: absolute
-  background: whiteColor
-  border-top: 10px solid blue
-  padding: 25px
-  top: 40px
-  right: 20%
-  z-index: 1
+.compare-image
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-.contact-row
-  margin-bottom: 30px
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid skyblue
+  background-image: url('/static/img/general/arrow-comp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover
+    background: skyblue
+}
 
-.contact-heading
-  font-size: rem(40px)
-  color: blue
-  font-weight: 700
-  margin-bottom: 35px
-  text-transform: uppercase
+.c-img
+  max-width: inherit;
 
-.contact-name
-  font-size: rem(20px)
-  color: dark-blue
-  font-weight: 700
+.text-constructor
+  margin: 60px 0
+  line-height: rem(30px)
+  color: #343451
+
+.button-desc--constructor
+  margin-left: 35px
+
+.instagram-content
+  display: flex;
+  width: 100%
+
+.insta-topic
   margin-bottom: 20px
-  text-transform: uppercase
-  position: relative
-  padding-left: 30px
-.contact-name-adr
-  &:before
-    left: 0
-    position: absolute
-    content: ''
-    width: 20px
-    height: 20px
-    display: flex
-    background: url("/static/img/general/loc-icon.png") no-repeat center
 
-.contact-name-num
-  &:before
-    left: 0
-    position: absolute
-    content: ''
-    width: 20px
-    height: 20px
-    display: flex
-    background: url("/static/img/general/phone-icon-ft.png") no-repeat center
+.insta-name
+  font-size: rem(12px)
+  text-transform: uppercase;
+  &:after
+    content: '-'
+    margin: 0 3px
 
-.contact-link
-  font-family: PTSansFont
-  margin-bottom: 15px
+.insta-link
+  font-size: rem(12px)
+  text-transform: uppercase;
+  color: #73d0ea
+  text-decoration: underline;
+
+.instagram-image
+  display: flex;
+  flex-grow: 1
+  height: 240px
+  max-width: 240px
+  max-height: 240px
+  position: relative;
+  z-index: 99
+  &:hover .insta-image-overlay
+    opacity: 0.7
+    transition-animation()
+    transition-delay: 0.1s
+    transform: scale(1)
+  &:hover .insta-icon
+    fill: skyblue
+    stroke: skyblue
+    transition-animation()
+    transition-delay: 0.1s
+
+.insta-image-overlay
+  position: absolute;
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #202023
+  opacity: 0
+  z-index: 0
+  transition-animation()
+
+.insta-icon-overlay
+  position: absolute;
+  height: 100%
+  width: 100%
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0
+
+
+.insta-icon
+  height: 30px
+  width: 30px
+  z-index: 0
+  fill: transparent
+  stroke: transparent
+  transition-animation()

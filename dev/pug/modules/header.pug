@@ -1,12 +1,24 @@
-header.header.wow.slideInDown(data-wow-duration="1.5s")
-  .header-content
-    .logo
-      a(href="/")
-        img.logo-img(src="./static/img/general/logo.png")
-    p.logo-text Некоммерческая организация микрокредитная компания  "Фонд микрофинансирования субъектов малого и среднего предпринимательства в Ставропольском крае"
-  .header-content
-    a.company-number +7 (800) 100-80-26
-    a.company-number +7 (800) 100-80-26
-    a.company-number +7 (800) 100-80-26
-    button.btn.btn-version Версия для слабовидящих
-  .header-overlay
+header
+  .container
+    .header-content
+      .logo
+        a(href='/') 
+          img.logo-img(src="/static/img/general/main-logo.png")
+      nav.nav.nav-header
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header Constructor
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header Men
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header Women
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header SHOP PARTS 
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header bRAND
+        li.nav-li.nav-li-header
+          a(href='/').nav-link.nav-link-header wARRANTY  
+      .cart
+        +icon('ic_cart', 'chart-icon')
+        li
+          a.cart-link(href="/") My Cart
+          span.cart-items-amount (0) 

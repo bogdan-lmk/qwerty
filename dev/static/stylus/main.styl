@@ -9,7 +9,7 @@ html
 	line-height 1.3
 
 body
-	font-family CuprumFont
+	font-family montserratFont, oswaldFont, sans-serif
 	height 100%
 
 h1,h2,h3,h4,h5,h6
@@ -40,11 +40,14 @@ textarea
 
 section
 	position relative
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 input,
 select,
 button
 	outline none
+
 img
 	max-width 100%
 
@@ -59,7 +62,11 @@ img
 .content
 	flex 1 0 auto
 
-
+.container
+	display: flex;
+	max-width: 1280px
+	width: 100%
+	padding: 0 20px
 //Модули
 @import "modules/modules.styl"
 

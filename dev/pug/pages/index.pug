@@ -1,227 +1,530 @@
 extends ../layout/main
 
 block variables
-	- var title = 'Главная страница'
+	- var title = 'Main Page'
 	- var pageClass = 'index-page'
 
 block content
-	.block.block-main
-		include ../modules/header
-		include ../modules/main-nav
-		.block-main-content.wow.slideInUp(data-wow-duration="1.5s" data-wow-delay="1s" )
-			.district
-				.district-image
-					img.district-img(src="./static/img/general/gerb.png")
-				h3.district-name МИНИСТЕРСТВО ЭКОНОМИЧЕСКОГО РАЗВИТИЯ СТАВРОПОЛЬСКОГО КРАЯ
-			h1.block-main-title Господдержка
-			h3.block-main-subtitle Микрозаймы для малого и среднего бизнеса на льготных условиях
-			.offer-content.wow.slideInUp(data-wow-duration="1.5s" data-wow-delay="1s")
-				.offer
-					.offer-top
-						span.offer-text до 
-						span.offer-large 10
-						span.offer-text годовых
-					.offer-bottom
-						span.offer-text-bottom Максимальная 
-						span.offer-subtext-bottom  процентная ставка
-				.offer
-					.offer-top
-						span.offer-text до 
-						span.offer-large 3
-						span.offer-text млн. руб
-					.offer-bottom
-						span.offer-text-bottom Максимальная 
-						span.offer-subtext-bottom  сумма микрозайма
-				.offer
-					.offer-top
-						span.offer-text до 
-						span.offer-large 36
-						span.offer-text месяцев
-					.offer-bottom
-						span.offer-text-bottom Максимальная 
-						span.offer-subtext-bottom  строк микрозайма
-			.btn-to-bottom
-		.block.block-counter
-			.counter-content-top.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-				span.counter-text-top Выдано:
-				.counter-top
-					span.counter-number.counter-number-top.counter-number-top-single 3
-					span.counter-number.counter-number-top 500
-				span.counter-text-top кредитов
-			.counter-content-bottom.wow.slideInUp(data-wow-duration="1s"   data-offset="120")
-				span.counter-text-bottom на сумму
-				.counter-bottom
-					span.counter-number.counter-number-bottom 3
-					span.counter-number.counter-number-bottom 000
-					span.counter-number.counter-number-bottom 000
-					span.counter-number.counter-number-bottom 000
-				span.counter-text-bottom рублей
-	.block.block-purpose
-		h3.title.purpose-title НА КАКИЕ НУЖДЫ МОЖНО ПОЛУЧИТЬ микрозайм
-		.purpose-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/users.png")
-				p.purpose-desc Организация бизнеса
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/money.png")
-				p.purpose-desc Пополнение оборотных средств
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/property.png")
-				p.purpose-desc Покупка коммерческой недвижимости, автотранспорта и спецтехники
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/equipment.png")
-				p.purpose-desc Приобретение оборудования и материалов
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/finance-sh.png")
-				p.purpose-desc Финансирование деятельности сельхозкооперативов
-			.purpose
-				.purpose-image
-					img(src="/static/img/general/auction.png")
-				p.purpose-desc Обеспечение заявки на участие в конкурсе (аукционе)
-	.block.block-types
-		h3.title.types-title Виды микрозайм
-		.types-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-			.type
-				.type-name Беззалоговый
-				.type-info
-					.type-icon
-						img.type-img(src="/static/img/general/arms.png")
-					.type-info-text
-						span.type-to Сумма до:
-						span.type-value 150 000 руб.
-					.type-info-text
-						span.type-to Срок до:
-						span.type-value 18 мес.
-			.type
-				.type-name МИКРО-Старт
-				.type-info
-					.type-icon
-						img.type-img(src="/static/img/general/type-start.png")
-					.type-info-text
-						span.type-to Сумма до:
-						span.type-value 150 000 руб.
-					.type-info-text
-						span.type-to Срок до:
-						span.type-value 18 мес.
-			.type
-				.type-name МИКРО-ОБОРОТ
-				.type-info
-					.type-icon
-						img.type-img(src="/static/img/general/micro-ob.png")
-					.type-info-text
-						span.type-to Сумма до:
-						span.type-value  3 000 000 руб.
-					.type-info-text
-						span.type-to Срок до:
-						span.type-value 18 мес.
-		.types-content
-			.type
-				.type-name МИКРО-Инвест
-				.type-info
-					.type-icon
-						img.type-img(src="/static/img/general/type-micro-inv.png")
-					.type-info-text
-						span.type-to Сумма до:
-						span.type-value  3 000 000 руб.
-					.type-info-text
-						span.type-to Срок до:
-						span.type-value 18 мес.
-			.type
-				.type-name Сельхозкооперация
-				.type-info
-					.type-icon
-						img.type-img(src="/static/img/general/type-sh.png")
-					.type-info-text
-						span.type-to Сумма до:
-						span.type-value  3 000 000 руб.
-					.type-info-text
-						span.type-to Срок до:
-						span.type-value 18 мес.
-	.block.block-steps
-			h3.title.steps-title Шаги получения микрозайма
-			.steps-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-				.step
-					.step-bg-number
-						img(src="/static/img/general/steps-number-one.png")
-					.step-image
-						img(src="/static/img/general/steps-user.png")
-					span.step-name Получить консультацию
-					span.step-desc У наших специалистов
-				.step
-					.step-bg-number
-						img(src="/static/img/general/steps-number-one.png")
-					.step-image.step-image-second
-						img(src="/static/img/general/steps-list.png")
-					span.step-name Собрать и предоставить
-					span.step-desc полный пакет документов
-				.step
-					.step-bg-number
-						img(src="/static/img/general/steps-number-one.png")
-					.step-image
-						img(src="/static/img/general/steps-three.png")
-					span.step-name Расмотрение заявки 
-					span.step-desc Подготовка Фондом экспертного заключения
-				.step
-					.step-bg-number
-						img(src="/static/img/general/steps-number-one.png")
-					.step-image.step-image-last
-						img(src="/static/img/general/steps-give.png")
-					span.step-name Видача микрозайма
-					span.step-desc Заключение догвора и получение микрозайма
-	.block.block-documents
-		h3.title.documents-title Документы и правила предоставления микрозайма
-		button.btn.btn-get-rules Правила предоставления микрозаймов
-		.documnets-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-			.document
-				.documnet-img
-					img(src="/static/img/general/pdf.png")
-				span.document-name ИП, ИП Глава к(Ф)Х
-			.document
-				.documnet-img
-					img(src="/static/img/general/word.png")
-				span.document-name ИП, ИП Глава к(Ф)Х
-			.document
-				.documnet-img
-					img(src="/static/img/general/word.png")
-				span.document-name ИП, ИП Глава к(Ф)Х
-		button.btn.btn-apply Подать предварительную заявку
-	.block.block-useful
-		h3.title.documents-title Полезные ссылки
-		.useful-content.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-			.useful-link-main
-				a(href="/")
-					img.useful-img(src="/static/img/general/ul-1.png")
-			.useful-link-main
-				a(href="/")
-					img.useful-img(src="/static/img/general/ul-2.png")
-		.useful-content.useful-content-secondary.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-			.useful-link-secondary
-				a(href="/")
-					img.useful-img(src="/static/img/general/ul-s-3.png")
-			.useful-link-secondary
-				a(href="/")
-					img.useful-img(src="/static/img/general/ul-s-2.png")
-			.useful-link-secondary
-				a(href="/")
-					img.useful-img(src="/static/img/general/ul-s-1.png")
-		button.btn.btn-get-rules Показать все полезные ссылки
-	.block.block-map
-		#map.wow.slideInUp(data-wow-duration="1s"  data-offset="100")
-		.contacts.wow.slideInUp(data-wow-duration="1s"  data-wow-delay="0.2s" data-offset="100")
-			.contact-row
-				h3.contact-heading Контакты
-				span.contact-name.contact-name-adr Адрес
-				li.contact-list 
-					a.contact-link(href="/") г. Ставрополь, уп. Пушкина 25 а, 3 этаж
-			span.contact-name.contact-name-num Телефоны
-			li.contact-list
-				a.contact-link(href="/") +7 (8652) 35 - 41 - 65
-			li.contact-list
-				a.contact-link(href="/") +7 (8652) 35 - 41 - 65
-			li.contact-list
-				a.contact-link(href="/") +7 (8652) 35 - 41 - 65
+	include ../modules/header
+	include ../modules/main-nav
+	section.main-block
+		.container
+			.main-block-content
+				.main-glass-slider
+					input.range-slider(type="range" value="0" step="1" max="9")
+					p.value
+				.content-wrap
+					h1.main-heading Design your own eyewear
+					.main-buttons-wrap
+						.buttons-wrap.column
+							.btn-wrap.btn-wrap--column.btn-wrap--blue
+								button.btn.btn--blue To the constructor
+							a(href="/").button-desc Create your own glasses
+						.buttons-wrap.column
+							.btn-wrap.btn-wrap--column.btn-wrap--blue
+								button.btn.btn--blue  To the shop
+							a(href="/").button-desc Choose one from the collection
+	section.items-block
+		.container
+			.items-block-content
+				.item-info-wrap
+					.item-type-name
+						h3.item-tag #TOP 20
+					.item-row
+						.item-tabs
+							span.item-tabs-name(data-tab="1").active-tab Men 
+							span.item-tabs-name(data-tab="2") Women 
+						.item-total
+							span.total-text 194
+							span.total-text items
+				.item-tab-content#tab-1(data-content="1").active
+					.item-photo
+						img.img-pres(src='/static/img/general/item-photo.png')
+						.item-photo-decoration
+					.items-wrap
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color")
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart							
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart			
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart
+						.item.item-explore
+							a(href='/').explore-collection-link explore the collection
+				.item-tab-content#tab-2(data-content="2")
+					.item-photo
+						img.img-pres(src='/static/img/general/item-photo.png')
+						.item-photo-decoration
+					.items-wrap
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color")
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart							
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart			
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart
+						.item.item-explore
+							a(href='/').explore-collection-link explore the collection
+	section.benefits-block.benefits-block--skyblue
+		.decortion#first-decoration
+		.container
+			.benefit-section
+				.benefit-info
+					h3.benefit-heading.benefit-heading--pink Same lenses different frames
+					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
+					.buttons-wrap.row
+						.btn-wrap.btn-wrap--row.btn-wrap--pink
+							button.btn.btn--pink  To the shop
+						a(href="/").button-desc Explore more about creating Shakashawaii glasses
+				.benefit-image
+					img.bf-img(src='/static/img/general/bf-photo-1.png')
+	section.benefits-block.benefits-block--turquoise
+		.decortion#second-decoration
+		.container
+			.benefit-section
+				.benefit-info
+					h3.benefit-heading.benefit-heading--yellow New styles 
+					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
+					.buttons-wrap.row
+						.btn-wrap.btn-wrap--row.btn-wrap--yellow
+							button.btn.btn--yellow  To the shop
+						a(href="/").button-desc Explore more about creating Shakashawaii glasses
+				.benefit-image
+					img.bf-img(src='/static/img/general/bf-photo-1.png')
+	section.benefits-block.benefits-block--creamy
+		.decortion#third-decoration
+		.container
+			.benefit-section
+				.benefit-info
+					h3.benefit-heading.benefit-heading--blue HD Lenses
+					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
+					.buttons-wrap.row
+						.btn-wrap.btn-wrap--row.btn-wrap--blue
+							button.btn.btn--blue Explore
+						a(href="/").button-desc Explore more about creating Shakashawaii glasses
+				.benefit-image
+					img.bf-img(src='/static/img/general/bf-photo-1.png')
+	section.constructor-block
+		.container
+			.main-block-content
+				.compare-glass-slider
+					.compare-slider-container
+						.compare-image
+							img.c-img(src="/static/img/general/comp-img-1.png")
+						.compare-image.compare-image-overlay
+							img.c-img(src="/static/img/general/comp-img-2.png")
+				.content-wrap
+					h3.constructor-heading Interchangeable parts
+					p.text.text-constructor The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame. 
+					.buttons-wrap.row
+						.btn-wrap.btn-wrap--row.btn-wrap--blue
+							button.btn.btn--blue To the constructor
+						a(href="/").button-desc Start creating your br own glasses right now
+		.container
+			.items-block-content
+				.item-info-wrap
+					.item-type-name
+						h3.item-tag #SHAKA'S
+					.item-row
+						.item-tabs
+							span.item-tabs-name(data-tab="1").active-tab Men 
+							span.item-tabs-name(data-tab="2") Women 
+						.item-total
+							span.total-text 194
+							span.total-text items
+				.item-tab-content#tab-1(data-content="1").active
+					.item-photo
+						img.img-pres(src='/static/img/general/item-photo-2.png')
+						.item-photo-decoration.item-photo-decoration-second
+					.items-wrap
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color")
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart							
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart
+						.item.item-explore
+							a(href='/').explore-collection-link Design in the construction
+						.item.item-explore
+							a(href='/').explore-collection-link explore the collection	
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart			
+				.item-tab-content#tab-2(data-content="2")
+					.item-photo
+						img.img-pres(src='/static/img/general/item-photo.png')
+						.item-photo-decoration
+					.items-wrap
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color")
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart							
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart				
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart			
+						.item
+							.item-top
+								a(href='/').item-name Bruno - The Classic
+								a(href='/').item-link-view View
+							.item-image
+								img.item-img(src='/static/img/content/item.png')
+							.item-price.sales
+								span.actual-price 150$ USD
+								span.old-price 150$ USD
+							.item-action
+								.select-item-color
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red") 
+									input#black.color-choice(type="radio" name="selected-color")
+									label.color-pick.black(for="black")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+									input#red.color-choice(type="radio" name="selected-color" checked)
+									label.color-pick.pink(for="red")
+								.wrap-ad-to-chart
+									a(href="/").btn-add-to-chart Add to cart
+						.item.item-explore
+							a(href='/').explore-collection-link explore the collection	
+	section.instagram-block
+		.container
+			.insta-topic
+				span.insta-name instagram
+				a(href='/').insta-link shakas_hawaii
+		.instagram-content
+			.instagram-image
+				img(src='/static/img/general/insta-ph-1.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-2.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-3.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-4.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-1.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-2.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-3.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+			.instagram-image
+				img(src='/static/img/general/insta-ph-4.png').insta-img
+				.insta-image-overlay
+				.insta-icon-overlay
+					a.insta-icon-link(href='/')
+						+icon('ic-insta', 'insta-icon')
+	include ../modules/footer
