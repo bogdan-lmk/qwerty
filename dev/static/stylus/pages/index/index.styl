@@ -22,7 +22,122 @@
   width: 45%
   height: 360px
   display: flex;
+  flex-direction: column;
 
+
+.swipe-slider-content
+  position: relative;
+  width: 100%
+  height: 100%
+
+.swipe-img
+  absolute-center()
+  opacity: 0
+
+.is-visible
+  opacity: 1
+
+
+.swipe-slider
+  width: 100%
+  display: flex;
+  justify-content: center;
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 40%
+  height: 45px
+  margin: 10px 0;
+  background-image: url('/static/img/general/slider-dots.png');
+  background-position-y: 30%;
+  background-position-x: 15%;
+  background-repeat: no-repeat;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  background: red
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px transparent;
+  background: transparent;
+  border-radius: 5px;
+  border: 0px solid transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 3px 3px 1px #d8f3ff;
+  border: 1px solid #82d7ff;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.5px;
+  background-image: url('/static/img/general/arrow-slider.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px transparent;
+  background: transparent;
+  border-radius: 5px;
+  border: 0px solid transparent;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 3px 3px 1px #d8f3ff;
+  border: 1px solid #82d7ff;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px transparent;
+}
+input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px transparent;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 3px 3px 1px #d8f3ff;
+  border: 1px solid #82d7ff;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: transparent;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: transparent;
+}
 
 .content-wrap
   display: flex;
@@ -344,11 +459,12 @@
   overflow: auto;
   width: 100%;
 
-.decortion
-  width: 100%
-  height: 100%
-  z-index: 199
+.decoration
+  width: 35%;
+  height: 100%;
+  z-index: 99;
   position: absolute;
+  right: 13%;
 
 #first-decoration
   background: url('/static/img/general/Illustration-1.png')  no-repeat fixed
@@ -399,16 +515,19 @@
 .benefit-section
   display: flex;
   justify-content: space-between;
-  z-index: 99
 
 
 .benefit-info
   display: flex;
   flex-direction: column;
   max-width: 40%
+  z-index: 999
 
 .benefit-image
   max-width 50%
+  position: relative;
+
+
 
 .benefit-heading
   Heading-Text-Style()
@@ -438,40 +557,47 @@
   text-shadow: 4px 4px 4px skyblue-two;
 
 
-.compare-glass-slider
+.comparison-slider-wrapper
   display: flex;
-  width: 40%
+  width: 39%
+  position:relative;
+  flex-direction: column;
 
-.compare-slider-container
-  position: relative
-  height: 250px
+.twentytwenty-wrapper.twentytwenty-horizontal
   width: 100%
 
-.compare-image
-  position: absolute;
+.twentytwenty-container
+  padding: 35px 0
+  img
+    top: 35px
+
+.twentytwenty-handle
+  background: url('/static/img/general/arrow-comp.png') no-repeat center
+  background-color: white
+  border: 2px solid skyblue;
+  &:before
+    box-shadow: none!important
+    background: #e3e3e3!important
+    width: 2px!important
+  &:after
+    box-shadow: none!important
+    background: #e3e3e3!important
+    width: 2px!important
+
+.twentytwenty-left-arrow
+  border-right: 6px solid transparent!important
+.twentytwenty-right-arrow
+  border-left: 6px solid transparent!important
+
+.comparison-slider-descr
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px
 
-.img-comp-slider {
-  position: absolute;
-  z-index:9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid skyblue
-  background-image: url('/static/img/general/arrow-comp.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  &:hover
-    background: skyblue
-}
-
-.c-img
-  max-width: inherit;
+.slider-descr-text
+  font-size: 14px
+  color: #8f8f91
 
 .text-constructor
   margin: 60px 0

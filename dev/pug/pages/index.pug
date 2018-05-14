@@ -11,7 +11,17 @@ block content
 		.container
 			.main-block-content
 				.main-glass-slider
-					input.range-slider(type="range" value="0" step="1" max="9")
+					.swipe-slider-content
+						img.swipe-img(src="/static/img/general/glass-st-0.png")
+						img.swipe-img(src="/static/img/general/glass-st-1.png")
+						img.swipe-img(src="/static/img/general/glass-st-2.png")
+						img.swipe-img(src="/static/img/general/glass-st-3.png")
+						img.swipe-img(src="/static/img/general/glass-st-4.png")
+						img.swipe-img(src="/static/img/general/glass-st-5.png")
+						img.swipe-img(src="/static/img/general/glass-st-6.png")
+						img.swipe-img.is-visible(src="/static/img/general/glass-st-7.png")
+					.swipe-slider
+						input.range-slider(type="range" id="valBox" value="8"  step="1" min="0" max="8" oninput="showVal(this.value)" onchange="showVal(this.value)" )
 					p.value
 				.content-wrap
 					h1.main-heading Design your own eyewear
@@ -232,7 +242,7 @@ block content
 						.item.item-explore
 							a(href='/').explore-collection-link explore the collection
 	section.benefits-block.benefits-block--skyblue
-		.decortion#first-decoration
+		.decoration#first-decoration
 		.container
 			.benefit-section
 				.benefit-info
@@ -243,9 +253,9 @@ block content
 							button.btn.btn--pink  To the shop
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
-					img.bf-img(src='/static/img/general/bf-photo-1.png')
+					img.bf-img(src='/static/img/general/Photo-3.png')
 	section.benefits-block.benefits-block--turquoise
-		.decortion#second-decoration
+		.decoration#second-decoration
 		.container
 			.benefit-section
 				.benefit-info
@@ -256,9 +266,9 @@ block content
 							button.btn.btn--yellow  To the shop
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
-					img.bf-img(src='/static/img/general/bf-photo-1.png')
+					img.bf-img(src='/static/img/general/Photo-2.png')
 	section.benefits-block.benefits-block--creamy
-		.decortion#third-decoration
+		.decoration#third-decoration
 		.container
 			.benefit-section
 				.benefit-info
@@ -269,16 +279,17 @@ block content
 							button.btn.btn--blue Explore
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
-					img.bf-img(src='/static/img/general/bf-photo-1.png')
+					img.bf-img(src='/static/img/general/Photo.png')
 	section.constructor-block
 		.container
 			.main-block-content
-				.compare-glass-slider
-					.compare-slider-container
-						.compare-image
-							img.c-img(src="/static/img/general/comp-img-1.png")
-						.compare-image.compare-image-overlay
-							img.c-img(src="/static/img/general/comp-img-2.png")
+				.comparison-slider-wrapper
+					.comparison-slider
+						img.c-img(src="/static/img/general/comp-img-1.png")
+						img.c-img(src="/static/img/general/comp-img-2.png")
+					.comparison-slider-descr
+						span.slider-descr-text Standard design
+						span.slider-descr-text ShakasHawaii glasses
 				.content-wrap
 					h3.constructor-heading Interchangeable parts
 					p.text.text-constructor The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame. 
