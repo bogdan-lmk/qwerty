@@ -1,0 +1,104 @@
+@media (max-width:1281px)
+  .main-block:before
+    content: '';
+    position: absolute;
+    background: url(/static/img/general/bottom.png) no-repeat;
+    background-position: bottom;
+  .logo
+    display: none;
+  .mobile-logo
+    display: flex
+    z-index: 9999
+    width: 61px
+    height: 34px
+    margin-left: 20px
+  .mobile-logo-img
+    position: absolute;
+    display: flex;
+    max-width: unset
+  .mobile-control-wrap
+    z-index: 9999
+    display: flex;
+    transition: 0.2s
+  .mob-control-hamburger
+    background: url(/static/img/general/mobile-menu.png) no-repeat;
+    display: flex;
+    width: 44px
+    height: 32px
+  .mob-control-close
+    display: flex;
+    width: 32px
+    height: 32px
+    background: url(/static/img/general/close-m.png) no-repeat center;
+  .nav-header
+    width: 100%;
+    top: 115px;
+    left: 0;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    z-index: 99999
+    transition: 0.3s
+    // transition-delay: .2s
+    position: fixed;
+    transform: translateX(-100%);
+  .nav-li-header
+    margin-bottom: 15px
+
+  .mobile-hidden
+    visibility: hidden;
+    opacity: 0;
+
+  .mobile-control-wrap--close
+    position: absolute;
+    right: 20px
+    top: 15px
+    visibility: hidden;
+    opacity: 0;
+
+  .cart-link
+    display: none;
+
+
+  .mob-overlay--active
+    transform: translate(0)
+    transition: 0.2s ease-in-out
+
+  .mob-visible
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease-in-out
+
+  .visible-menu
+    transform: translateX(0);
+    transition: 0.2s ease-in-out
+    transition-delay: .2s
+
+  .body-overflow
+    overflow: hidden;
+
+  .item-info-wrap
+    flex-direction: column;
+    align-items: center;
+  .item-row
+    justify-content: center;
+    margin-top: 40px
+  .item-total
+    display: none;
+  .item-photo
+    display: none;
+  .items-wrap
+    width: 99%
+    justify-content: center;
+  .item
+    min-height: 290px
+    // width: 100%
+  .main-buttons-wrap
+    flex-direction: column;
+    align-items: flex-start;
+  .button-desc
+    display: none;
+
+@media (max-width:1024px)
+  .item
+    width: 275px

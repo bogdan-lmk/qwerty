@@ -3,7 +3,9 @@ header
     .header-content
       .logo
         a(href='/') 
-          img.logo-img(src="/static/img/general/main-logo.png")
+          img.logo-img(src="/static/img/general/main-logo.png") 
+      .mobile-control-wrap
+        a.mob-control-hamburger     
       nav.nav.nav-header
         li.nav-li.nav-li-header
           a(href='/').nav-link.nav-link-header Constructor
@@ -16,9 +18,15 @@ header
         li.nav-li.nav-li-header
           a(href='/').nav-link.nav-link-header bRAND
         li.nav-li.nav-li-header
-          a(href='/').nav-link.nav-link-header wARRANTY  
+          a(href='/').nav-link.nav-link-header wARRANTY
+      .mobile-logo
+        a(href='/') 
+          img.mobile-logo-img(src="/static/img/general/logo-m.png")
+          img.mobile-logo-img.mobile-hidden(src="/static/img/general/logo-mobile-hidden.png")         
       .cart
         +icon('ic_cart', 'chart-icon')
         li
           a.cart-link(href="/") My Cart
           span.cart-items-amount (0) 
+      .mobile-control-wrap.mobile-control-wrap--close
+        a.mob-control-close     

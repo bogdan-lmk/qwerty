@@ -28,11 +28,11 @@ block content
 					.main-buttons-wrap
 						.buttons-wrap.column
 							.btn-wrap.btn-wrap--column.btn-wrap--blue
-								button.btn.btn--blue To the constructor
+								a.btn.btn--blue To the constructor
 							a(href="/").button-desc Create your own glasses
 						.buttons-wrap.column
 							.btn-wrap.btn-wrap--column.btn-wrap--blue
-								button.btn.btn--blue  To the shop
+								a.btn.btn--blue  To the shop
 							a(href="/").button-desc Choose one from the collection
 	section.items-block
 		.container
@@ -57,7 +57,8 @@ block content
 								a(href='/').item-name Bruno - The Classic
 								a(href='/').item-link-view View
 							.item-image
-								img.item-img(src='/static/img/content/item.png')
+								img.item-img.item-visible(src='/static/img/content/item.png')
+								img.item-img.item-img-secondary(src='/static/img/general/item-2.png')
 							.item-price
 								span.actual-price 150$ USD
 								span.old-price 150$ USD
@@ -70,7 +71,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color")
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart							
+									button(href="/").btn-add-to-chart Add to cart							
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -82,7 +83,7 @@ block content
 								span.old-price 150$ USD
 							.item-action
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -101,7 +102,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -120,7 +121,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart			
+									button(href="/").btn-add-to-chart Add to cart			
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -141,7 +142,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart
+									button(href="/").btn-add-to-chart Add to cart
 						.item.item-explore
 							a(href='/').explore-collection-link explore the collection
 				.item-tab-content#tab-2(data-content="2")
@@ -167,7 +168,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color")
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart							
+									button(href="/").btn-add-to-chart Add to cart							
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -179,7 +180,7 @@ block content
 								span.old-price 150$ USD
 							.item-action
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -198,7 +199,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -217,7 +218,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart			
+									button(href="/").btn-add-to-chart Add to cart			
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -238,11 +239,10 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart
+									button(href="/").btn-add-to-chart Add to cart
 						.item.item-explore
 							a(href='/').explore-collection-link explore the collection
 	section.benefits-block.benefits-block--skyblue
-		.decoration#first-decoration
 		.container
 			.benefit-section
 				.benefit-info
@@ -250,10 +250,12 @@ block content
 					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
 					.buttons-wrap.row
 						.btn-wrap.btn-wrap--row.btn-wrap--pink
-							button.btn.btn--pink  To the shop
+							a.btn.btn--pink  To the shop
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
 					img.bf-img(src='/static/img/general/Photo-3.png')
+					.decoration#first-decoration
+						img.dc(src='/static/img/general/Illustration-1.png')
 	section.benefits-block.benefits-block--turquoise
 		.decoration#second-decoration
 		.container
@@ -263,10 +265,12 @@ block content
 					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
 					.buttons-wrap.row
 						.btn-wrap.btn-wrap--row.btn-wrap--yellow
-							button.btn.btn--yellow  To the shop
+							a.btn.btn--yellow  To the shop
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
 					img.bf-img(src='/static/img/general/Photo-2.png')
+					.decoration#first-decoration
+						img.dc(src='/static/img/general/Illustration-2.png')
 	section.benefits-block.benefits-block--creamy
 		.decoration#third-decoration
 		.container
@@ -276,10 +280,12 @@ block content
 					p.benefit-text The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame.
 					.buttons-wrap.row
 						.btn-wrap.btn-wrap--row.btn-wrap--blue
-							button.btn.btn--blue Explore
+							a.btn.btn--blue Explore
 						a(href="/").button-desc Explore more about creating Shakashawaii glasses
 				.benefit-image
 					img.bf-img(src='/static/img/general/Photo.png')
+					.decoration#first-decoration
+						img.dc(src='/static/img/general/Illustration-3.png')
 	section.constructor-block
 		.container
 			.main-block-content
@@ -295,7 +301,7 @@ block content
 					p.text.text-constructor The same pair of prescription lenses can fit many frame styles and colors. Easily pop-out your lenses and insert them into a diffrent frame. 
 					.buttons-wrap.row
 						.btn-wrap.btn-wrap--row.btn-wrap--blue
-							button.btn.btn--blue To the constructor
+							a.btn.btn--blue To the constructor
 						a(href="/").button-desc Start creating your br own glasses right now
 		.container
 			.items-block-content
@@ -332,7 +338,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color")
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart							
+									button(href="/").btn-add-to-chart Add to cart							
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -344,7 +350,7 @@ block content
 								span.old-price 150$ USD
 							.item-action
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart
+									button(href="/").btn-add-to-chart Add to cart
 						.item.item-explore
 							a(href='/').explore-collection-link Design in the construction
 						.item.item-explore
@@ -367,7 +373,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -386,7 +392,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart			
+									button(href="/").btn-add-to-chart Add to cart			
 				.item-tab-content#tab-2(data-content="2")
 					.item-photo
 						img.img-pres(src='/static/img/general/item-photo.png')
@@ -410,7 +416,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color")
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart							
+									button(href="/").btn-add-to-chart Add to cart							
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -422,7 +428,7 @@ block content
 								span.old-price 150$ USD
 							.item-action
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -441,7 +447,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart				
+									button(href="/").btn-add-to-chart Add to cart				
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -460,7 +466,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart			
+									button(href="/").btn-add-to-chart Add to cart			
 						.item
 							.item-top
 								a(href='/').item-name Bruno - The Classic
@@ -481,7 +487,7 @@ block content
 									input#red.color-choice(type="radio" name="selected-color" checked)
 									label.color-pick.pink(for="red")
 								.wrap-ad-to-chart
-									a(href="/").btn-add-to-chart Add to cart
+									button(href="/").btn-add-to-chart Add to cart
 						.item.item-explore
 							a(href='/').explore-collection-link explore the collection	
 	section.instagram-block

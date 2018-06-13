@@ -8,6 +8,7 @@
     width: 100%
     height: 100%;
     left: 0
+    right: 0
     bottom: 0
     z-index: 0
 
@@ -344,6 +345,32 @@ input[type=range]:focus::-ms-fill-upper {
   height: 100%;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: 0.2s;
+
+.item-image
+  &:hover .item-img-secondary
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s;
+  &:hover .item-visible
+    opacity: 0;
+
+
+
+.item-img{
+  position: absolute;
+  transition: 0.2s;
+}
+.item-img-secondary{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+
+
 
 .item-name
   color: #79797b
@@ -450,33 +477,35 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 99
 
 .benefits-block
-  height: 65vh
   justify-content: center;
   position: relative;
 
-.story
-  margin: 0 auto;
-  overflow: auto;
-  width: 100%;
-
 .decoration
-  width: 35%;
+  width: 100%;
   height: 100%;
   z-index: 99;
   position: absolute;
-  right: 13%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
 
-#first-decoration
-  background: url('/static/img/general/Illustration-1.png')  no-repeat fixed
-  background-position: 77.3%
 
-#second-decoration
-  background: url('/static/img/general/Illustration-2.png')  no-repeat fixed
-  background-position: 77.4%
 
-#third-decoration
-  background: url('/static/img/general/Illustration-3.png')  no-repeat fixed
-  background-position: 80.1%
+.dc
+  position: sticky;
+  left: 0;
+  top: 0;
+// #first-decoration
+//   background-image: url('/static/img/general/Illustration-1.png')
+//
+//
+// #second-decoration
+//   background-image: url('/static/img/general/Illustration-2.png')
+//
+//
+// #third-decoration
+//   background-image: url('/static/img/general/Illustration-3.png')
+
 
 
 
@@ -515,19 +544,23 @@ input[type=range]:focus::-ms-fill-upper {
 .benefit-section
   display: flex;
   justify-content: space-between;
-
+  height: 65vh
+  position: relative;
 
 .benefit-info
   display: flex;
   flex-direction: column;
   max-width: 40%
+  width: 100%
   z-index: 999
+  justify-content: center;
 
 .benefit-image
   max-width 50%
   position: relative;
-
-
+  display: flex;
+  align-items: center;
+  height: 100%
 
 .benefit-heading
   Heading-Text-Style()
